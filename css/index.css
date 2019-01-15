@@ -72,6 +72,8 @@ h1, h2, h3, h4, h5 {
   margin: 0px 50px;
 }
 
+
+
 .nav-logo-container, .header-section {
   display: flex;
   flex-direction: row;
@@ -81,11 +83,44 @@ h1, h2, h3, h4, h5 {
   justify-content: space-between;
 }
 
+
+@media (max-width: 800px) {
+    .nav-logo-container {
+        flex-direction: column;
+        align-items: center;
+        margin-right: 30px;
+       height: 119px;
+    }
+}
+
+@media (max-width: 500px) {
+    .nav-logo-container {
+        flex-direction: column;
+        align-items: center;
+        margin-right: 30px;
+       height: 100px;
+    }
+}
+
 .header-section {
   justify-content: space-around;
   margin: 60px 0px;
   padding-bottom: 20px;
 }
+
+@media (max-width: 800px) {
+    .header-section {
+       padding-bottom: 0px;
+    
+      }
+  }
+
+  @media (max-width: 500px) {
+    .header-section {
+       margin-top: 350px;
+    
+      }
+  }
 
 #header-nav {
   display: inline-flex;
@@ -94,11 +129,43 @@ h1, h2, h3, h4, h5 {
   margin: 40px 0px;
   justify-content: space-between;
 }
+ @media (max-width: 800px){
+     #header-nav{
+order: 1;
+width: 100%;
+justify-content: space-between;
+
+     }
+ }
+
+ @media (max-width: 500px) {
+    #header-nav {
+        flex-direction: column;
+        align-items: center;
+
+    }
+}
 
 #header-nav a {
 	text-decoration: none;
   color: lightgray;
 }
+
+
+
+@media (max-width: 800px) {
+    #header-nav a {
+         width: 50px;
+      }
+  }
+
+  
+@media (max-width: 500px) {
+    #header-nav a {
+        padding-bottom: 20px;
+        margin-bottom: 40px;
+      }
+  }
 
 .logo-container {
   display: inline-flex;
@@ -108,9 +175,6 @@ h1, h2, h3, h4, h5 {
   margin: 30px 0px 30px 50px;
 }
 
-.logo {
-
-}
 
 .h1-button-container {
   display: flex;
@@ -135,6 +199,12 @@ h1 {
   flex-direction: row;
 }
 
+@media (max-width: 800px) {
+    .snippet-image-container{
+        display: none;
+    } 
+}
+
 #main {
   display: flex;
   flex-direction: column;
@@ -142,6 +212,14 @@ h1 {
   margin: 0px 50px 50px;
   padding-top: 50px;
 }
+
+@media (max-width: 800px) {
+   #main {
+       margin: 0px 25px 25px;
+       padding-top: 40px;
+     
+      }
+  }
 
 #footer {
   border-top: 1px solid black;
@@ -164,9 +242,7 @@ h1 {
   margin: 50px 0px;
 }
 
-.main-container-bottom {
 
-}
 
 .section-features {
   width: 50%;
@@ -201,4 +277,5 @@ h1 {
 .copyright {
 
 }
+
 
